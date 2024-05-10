@@ -10,6 +10,7 @@ def screen_shot (n , page_url , dir_name):
     os.mkdir(dir_name)
 
     options = Options()
+    #以下の２行で初期設定する
     options.add_argument("--user-data-dir=C:/Users/iniad/AppData/Local/Google/Chrome/User Data")
     options.add_argument('--profile-directory=Default')
 
