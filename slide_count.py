@@ -1,6 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from setting import Profile_location , Profile_name
 
 
 
@@ -8,9 +9,8 @@ from selenium.webdriver.common.by import By
 def slide_count(page_url):
     options = Options()
 
-    #以下の二つの引数を変更する
-    options.add_argument("--user-data-dir=C")
-    options.add_argument('--profile-directory=')
+    options.add_argument(f"--user-data-dir={Profile_location}")
+    options.add_argument(f'--profile-directory={Profile_name}')
 
     driver = webdriver.Chrome(options=options)
 
