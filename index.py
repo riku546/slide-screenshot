@@ -3,6 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from slide_count import slide_count
+from setting import Profile_location , Profile_name
 
 
 def screen_shot ( page_url , dir_name):
@@ -11,9 +12,9 @@ def screen_shot ( page_url , dir_name):
     slide_num = int(slide_count(page_url))
 
     options = Options()
-    #以下の２行で初期設定する
-    options.add_argument("--user-data-dir=")
-    options.add_argument('--profile-directory=')
+
+    options.add_argument(f"--user-data-dir={Profile_location}")
+    options.add_argument(f'--profile-directory={Profile_name}')
 
     driver = webdriver.Chrome(options=options)
  
