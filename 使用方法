@@ -1,5 +1,5 @@
 ・プログラムの初期設定
-以下を参照して、ユーザの設定をする
+以下を参照して、setting.pyの設定をする
 https://qiita.com/mayuka_muto/items/102cb30933135b9d345f
 
 
@@ -12,3 +12,5 @@ https://qiita.com/mayuka_muto/items/102cb30933135b9d345f
 2-1 保存したいスライドを開く
 2-2 右クリックでページのソースを開く
 2-3 URLを取得
+
+3 index.pyを実行する
