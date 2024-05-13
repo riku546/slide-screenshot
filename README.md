@@ -2,6 +2,8 @@
 以下を参照して、setting.pyの設定をする
 https://qiita.com/mayuka_muto/items/102cb30933135b9d345f
 
+# 以下のコマンドをvscodeのターミナルで使用する
+pip install selenium
 
 
 
